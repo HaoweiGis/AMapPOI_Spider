@@ -4,3 +4,6 @@
 
 *RangeVisual.py*：对获得的范围进行可视化，确保范围覆盖中国区域
 
+代码执行的方式
+python POIRange.py 010000 获取010000这一类别的POI数据
+python RangeVisual MapPOI\010000_range.txt 将数据转换为shp文件
