@@ -1,0 +1,9 @@
+### 高德POISpider 
+
+*POIRange.py*：通过矩形裁剪获得POI区域，需要给POI类型参数，接口说明如下（https://lbs.amap.com/api/webservice/guide/api/search#polygon）文件保存在MapPOI文件夹中
+
+*RangeVisual.py*：对获得的范围进行可视化，确保范围覆盖中国区域
+
+*try2.py* ：同学代码，包含POI下载，但是没有检查这一部分
+
+目前我的代码缺少根据生成矩形进行下载的这一部分

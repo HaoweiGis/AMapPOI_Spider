@@ -1,0 +1,1 @@
+id,name,tag,type,typecode,biz_type,address,location,tel,postcode,website,email,pcode,pname,citycode,cityname,adcode,adname,importance,shopid,shopinfo,poiweight,gridcode,distance,navi_poiid,entr_location,business_area,exit_location,match,recommend,timestamp,alias,indoor_map,indoor_data,groupbuy_num,discount_num,biz_ext,event,children,photos
