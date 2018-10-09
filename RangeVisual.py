@@ -28,6 +28,7 @@ def CreateGeo(MBRLine):
 
 if __name__ == '__main__':
     filename = sys.argv[-1]
+    name = filename.split('.')[0]
     multipolygon = ogr.Geometry(ogr.wkbMultiPolygon)
     MBRLines = open(filename, 'r').readlines()
     for line in MBRLines[1:]:
@@ -39,7 +40,7 @@ if __name__ == '__main__':
     driver = ogr.GetDriverByName("Esri Shapefile")
     srs = osr.SpatialReference()
     srs.ImportFromEPSG(4326)
-    ds = driver.CreateDataSource("outputlocation1.shp")
+    ds = driver.CreateDataSource(name+".shp")
     out_layr = ds.CreateLayer('', srs=srs, geom_type=ogr.wkbMultiPolygon)
     print(multipolygon.GetGeometryCount())
     # create the field
